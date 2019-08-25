@@ -1,7 +1,6 @@
-package com.myunittest.example.junit5exmple;
+package com.myunittest.example.junit;
 
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 
 public class Junit5ExmpleApplication {

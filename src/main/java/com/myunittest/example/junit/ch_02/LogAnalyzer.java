@@ -1,4 +1,4 @@
-package com.myunittest.example.junit5exmple.ch_02;
+package com.myunittest.example.junit.ch_02;
 
 public class LogAnalyzer {
 public boolean isValidLogFileName(String fileName){

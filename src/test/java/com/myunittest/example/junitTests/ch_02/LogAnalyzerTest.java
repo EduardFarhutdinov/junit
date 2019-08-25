@@ -1,5 +1,6 @@
-package com.myunittest.example.junit5exmple.ch_02;
+package com.myunittest.example.junitTests.ch_02;
 
+import com.myunittest.example.junit.ch_02.LogAnalyzer;
 import org.junit.jupiter.api.*;
 
 import java.util.logging.Logger;
@@ -24,6 +25,7 @@ class LogAnalyzerTest {
     void ileNameWithCorrectSuffixInLowercaseIsConsideredValid(){
         boolean result = logAnalyzer.isValidLogFileName("file.slf");
         assertTrue(result, "filename should be valid.");
+
     }
 
     @Test
