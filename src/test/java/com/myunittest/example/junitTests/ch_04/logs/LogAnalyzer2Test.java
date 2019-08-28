@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class LogAnalyzer2Test {
-    private static final String TOO_SHORT_FILE_NAME = "abc.txt";
+    private static final String TOO_SHORT_FILE_NAME = "abc.tx";
 
     @Test
     public void fallBackToSendingEmailWhenWebServiceFails(){
@@ -26,8 +26,8 @@ public class LogAnalyzer2Test {
     private class FailingWebService implements WebService{
         public Exception exceptionToThrow;
 
-        public FailingWebService(Exception exceptionToThrow) {
-            this.exceptionToThrow = exceptionToThrow;
+        public FailingWebService(Exception exception) {
+            this.exceptionToThrow = exception;
         }
 
         @Override
@@ -46,7 +46,7 @@ public class LogAnalyzer2Test {
         public void sendEmail(String recipient, String subject, String message) {
             this.recipient = recipient;
             this.subject = subject;
-            this.message = this.message;
+            this.message = message;
         }
     }
 }
