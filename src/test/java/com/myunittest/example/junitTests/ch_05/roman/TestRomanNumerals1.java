@@ -1,14 +1,8 @@
 package com.myunittest.example.junitTests.ch_05.roman;
 
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.MethodSource;
-import org.junit.jupiter.params.provider.ValueSource;
-
-import java.util.Collection;
 
 import static com.myunittest.example.junit.ch_05.roman.RomanNumerals.format;
-import static java.util.Arrays.asList;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class TestRomanNumerals1 {
