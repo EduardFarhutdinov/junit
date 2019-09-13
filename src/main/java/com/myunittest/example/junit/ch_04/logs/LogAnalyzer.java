@@ -10,7 +10,7 @@ public class LogAnalyzer {
     public void analyze(String fileName){
         if(fileName.length() < 8){
             try {
-                webService.logError("Filename too short: " + fileName);
+                webService.logError("Filename too short:" + fileName);
             }catch (Exception e){
                 throw new RuntimeException(e);
             }
